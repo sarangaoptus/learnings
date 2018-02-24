@@ -17,7 +17,7 @@ object WordCount {
     // Loading text fileFile object 
     val textFile = sc.textFile(args(0))
 
-  // Spilit the words
+  // Split the words
     
     val words = textFile.flatMap(line => line.split(" "))
     
